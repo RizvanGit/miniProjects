@@ -11,8 +11,14 @@
   <div class="wrapper">
     <input data-input-a type="number">
     <input data-input-b type="number">
+    <select data-select-operation name="select-operation" >
+      <option value="+">Sum</option>
+      <option value="-">Minus</option>
+      <option value="*">Multiply</option>
+      <option value="/">Division</option>
+    </select>
     <button data-btn-result>Result</button>
-  <p data-output></p>
+  <p data-output class="output"></p>
   </div>
   <script src="math.js"></script>
   <script src="calculator.js"></script>

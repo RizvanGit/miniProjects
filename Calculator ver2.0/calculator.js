@@ -1,8 +1,8 @@
 const OPERATIONS = {
   sum: '+',
   substract: '-',
-  multiply: '-',
-  division: '-',
+  multiply: '*',
+  division: '/',
 }
 
 function calculate ({a, b, operation}) {
