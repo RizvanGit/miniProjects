@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333;
 }
 
 .box {
@@ -67,11 +68,22 @@ body {
   user-select: none;
 }
 
+.age-calc.expand {
+  max-height: 100vh;
+  margin-top: 15px;
+  opacity: 1;
+}
+
 .age-calc {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 2s ease;
 }
 
 .age-calc .age-box {
