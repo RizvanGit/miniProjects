@@ -50,3 +50,24 @@ body {
   color: darkgreen;
   background-color: beige;
 }
+
+.submit-btn:active{
+  transition: all .1s ease;
+  color: beige;
+  background-color: darkslategray;
+}
+.output-field {
+  min-height: 45px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.true {
+  color:lightgreen;
+  background-color: darkgreen;
+}
+
+.false {
+  color: lightpink;
+  background-color: darkred;
+}
