@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('.buttons .btn')
 const notifications = document.querySelector('.notifications')
 
 const toastDetails = {
+  timer:5000,
   success: {
     src:'icons/check.png',
     text:'Success! This is a success toast.'
@@ -15,9 +16,15 @@ const toastDetails = {
     text:'Warning! This is a warning toast.'
   },
   info: {
-    src:'icons/info.png',
+    src:'icons/check.png',
     text:'Info! This is a info toast.'
   },
+}
+
+function removeToast(toast) {
+  toast.classList.add('hide')
+  if(toast.timeoutId) clearTimeout(toast.timeoutId)
+  setTimeout(()=> toast.remove(), 500)
 }
 
 function createToast (id) {
@@ -30,9 +37,10 @@ function createToast (id) {
                       <img class="icon" src="${src}" alt="check">
                       <span>${text}</span>
                     </div>
-                    <img src="icons/x.png" alt="delete">
+                    <img src="icons/x.png" alt="delete" onclick="removeToast(this.parentElement)">
   `
   notifications.append(toast)
+  toast.timeoutId = setTimeout(()=>removeToast(toast), toastDetails.timer)
 }
 
 buttons.forEach(btn=> {
