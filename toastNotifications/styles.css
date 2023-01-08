@@ -116,16 +116,61 @@ body {
   border-radius: 4px;
   margin: 0 5px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
+
+
 .buttons #success{
   background: var(--success);
+  
 }
+.buttons #success:hover{
+  background: #0a7521;
+  color: #eee;
+  transition: all .3s ease;
+}
+.buttons #success:active{
+  background: #eeeeee;
+  color: #0a7521;
+}
+
 .buttons #warning{
   background: var(--warning);
 }
+.buttons #warning:hover{
+  background: #a68605;
+  color: #eee;
+  transition: all .3s ease;
+}
+.buttons #warning:active{
+  background: #eee;
+  color: #a68605;
+  transition: all .3s ease;
+}
+
 .buttons #error{
   background: var(--error);
 }
+.buttons #error:hover{
+  background: #8c2929;
+  color: #eee;
+  transition: all .3s ease;
+}
+.buttons #error:active{
+  background: #eee;
+  color: #8c2929;
+  transition: all .3s ease;
+}
 .buttons #info{
   background: var(--info);
+}
+.buttons #info:hover{
+  background: #075c95;
+  color: #eee;
+  transition: all .3s ease;
+}
+.buttons #info:active{
+  background: #eee;
+  color: #075c95;
+  transition: all .3s ease;
 }
