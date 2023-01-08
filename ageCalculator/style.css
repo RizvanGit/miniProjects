@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFE53B;
+  background-image: linear-gradient(-147deg, #f3bf21 0%, #FF2525 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.box {
+  background: rgba(255, 255, 255, .3);
+  width: 768px;
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 20px;
+  transition: width .5s ease;
+}
+
+.box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  user-select: none;
+}
+.about{
+  user-select: none;
+}
+.datetime-picker {
+  display: flex;
+  align-items: center;
+  
+}
+
+.datetime-picker input {
+  margin: 10px;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: box-shadow .7s ease;
+}
+
+.datetime-picker input:hover {
+  outline: none;
+  box-shadow: 0 0 3px #343434;
+}
+
+.datetime-picker input:focus {
+  outline: none;
+  box-shadow: 0 0 14px #343434;
+}
+
+.chosen-date {
+  margin-left: auto;
+  user-select: none;
+}
+
+.age-calc.expand {
+  max-height: 100vh;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+.age-calc {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 2s ease;
+}
+
+.age-calc .age-box {
+  background: #eee;
+  border-radius: 7px;
+  margin: 10px;
+  width: 200px;
+  transition: .5s ease;
+}
+
+.age-box .header {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  text-align: center;
+  background: #FF2525;
+  color: #eee;
+  padding: 7px 14px;
+  font-size: 1.3rem;
+  user-select: none;
+}
+.age-box:nth-child(even) .header {
+  background: #ff9730;
+}
+
+.age-box .value {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+  transition: .5s ease;
+  
+}
+
+@media (max-width: 768px) {
+  body{
+    display: block;
+    margin: 2rem 0;
+  }
+  .box {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .age-box .header {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  .age-box .value {
+    padding: 7px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .box {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .datetime-picker{
+    display: block;
+    text-align: center;
+  }
+  .age-calc{
+    justify-content: center;
+  }
+  .chosen-date {
+    display: block;
+  }
+  .age-calc .age-box {
+    width: 100%;
+  }
+}
