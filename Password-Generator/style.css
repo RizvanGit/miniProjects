@@ -39,13 +39,14 @@ body {
 .input-box input {
   width: 100%;
   height: 40px;
- 
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border:none;
   outline: none;
   padding: 5px 10px;
   color: #eee;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
   
 }
 .input-box span {
@@ -66,8 +67,19 @@ body {
   position: absolute;
   content: '';
   height: 100%;
+  transition: width .5s ease;
+}
+.pass-indicator#weak::before{
+  width: 20%;
+  background-color: darkred;
+}
+.pass-indicator#medium::before{
   width: 50%;
   background-color: orange;
+}
+.pass-indicator#strong::before{
+  width: 100%;
+  background-color: green;
 }
 
 .copy {
