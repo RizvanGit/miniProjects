@@ -14,7 +14,7 @@ body {
   color: azure;
 }
 
-/* header */
+/*c header */
 header {
   position: fixed;
   top: 0;
@@ -63,16 +63,20 @@ img {
   font-size: 1.3rem;
 }
 
-/* cart */
+/*c cart */
 .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 360px;
   min-height: 100vh;
   padding: 15px;
   background-color: #84a59d;
   box-shadow: -3px 0 4px rgba(0, 0, 0, .2);
+  transition: right .5s ease;
+}
+.cart.active {
+  right: 0;
 }
 
 .cart-title{
@@ -105,6 +109,7 @@ img {
   width: 100px;
   object-fit: contain;
   padding: 2px;
+  position: relative;
 }
 .cart-price {
   width: 45%;
@@ -117,6 +122,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   min-height: 90px;
+
 }
 .cart-product-title{
   font-size: 1.2rem;
@@ -146,10 +152,60 @@ i.cart-remove:hover::before{
   font-size: 2.3rem;
 }
 
+.cart-total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 2px solid #333;
+}
+.total-title{
+  margin-right: 1rem;
+}
+:where(.total-title, .total-price){
+  font-size: 1.3rem;
+}
+.buy-button{
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.buy-button:hover{
+  transition: background-color .3s ease, color .3s ease;
+  background-color: #264e2f;
+  color: #eee;
+}
+.buy-button:active{
+  transition: background-color .1s ease, color .1s ease;
+  background-color: #7d9a84;
+  color: #333;
+}
+
+.close-cart{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  
+}
+.close-cart::before{
+  font-size: 3rem;
+  color: #333;
+}
+.close-cart:hover::before{
+  transition: color .2s ease;
+  color: #eee;
+}
+.close-cart:active::before{
+  transition: color .2s ease;
+  color: darkred;
+}
 
 
+/*c Shop content */
 
-/* Shop content */
 .shop-content {
   display: flex; 
   flex-wrap: wrap;
@@ -216,4 +272,9 @@ i.cart-remove:hover::before{
   transition: background-color .2s ease, color .2s ease;
   background-color: #eee;
   color: #333;
+}
+.add-cart:active {
+  transition: background-color .1s ease, color .1s ease;
+  background-color: #264e2f;
+  color: #eee;
 }
