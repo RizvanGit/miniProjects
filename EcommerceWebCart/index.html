@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Ecommerce Web</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!--c Header -->
+    <header>
+      <!--c navigation -->
+      <nav class="nav container">
+        <!--c Logo -->
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="logo" height="50">
+          Ecommerce
+        </a>
+        <!--c Cart icon -->
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <!--c cart -->
+        <div class="cart">
+          <h2 class="cart-title">Your cart</h2>
+          <!--c Cart content -->
+          <div class="cart-content"></div>
+          <div class="cart-total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">$100</div>
+          </div>
+          <!--c Buy button -->
+          <button type="button" class="buy-button">Buy now</button>
+          <!--c Cart close -->
+          <i class='bx bx-x close-cart' ></i>
+        </div>
+      </nav>
+    </header>
+  <!--c Shop -->
+  <section class="shop container">
+    <h2 class="section-title">Our products</h2>
+    <div class="shop-content">
+      <!-- Item 1 -->
+      <div class="product-box" data-id="0">
+        <img src="images/product1.jpg" alt="t-shirt" class="product-img">
+        <h2 class="product-title">AEROREADY SHIRT</h2>
+        <span class="price">$25</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+       <!-- Item 2 -->
+      <div class="product-box" data-id="1">
+        <img src="images/product2.jpg" alt="t-shirt" class="product-img">
+         <h2 class="product-title">WIRELESS EARBUDS</h2>
+         <span class="price">$100</span>
+         <i class='bx bx-shopping-bag add-cart'></i>
+       </div>
+        <!-- Item 3 -->
+      <div class="product-box" data-id="2">
+        <img src="images/product3.jpg" alt="t-shirt" class="product-img">
+        <h2 class="product-title">HOODED PARKA</h2>
+        <span class="price">$60</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+        <!-- Item 4 -->
+      <div class="product-box" data-id="3">
+        <img src="images/product4.jpg" alt="t-shirt" class="product-img">
+        <h2 class="product-title">STRAW METAL BOTTLE</h2>
+        <span class="price">$20.35</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+             <!-- Item 5 -->
+             <div class="product-box" data-id="4">
+              <img src="images/product5.jpg" alt="t-shirt" class="product-img">
+              <h2 class="product-title">SILVER METAL Sunglasses</h2>
+              <span class="price">$31</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- Item 6 -->
+            <div class="product-box" data-id="5">
+              <img src="images/product6.jpg" alt="t-shirt" class="product-img">
+               <h2 class="product-title">BACK HAT</h2>
+               <span class="price">$22</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+              <!-- Item 7 -->
+            <div class="product-box" data-id="6">
+              <img src="images/product7.jpg" alt="t-shirt" class="product-img">
+              <h2 class="product-title">BACKPACK</h2>
+              <span class="price">$80</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+              <!-- Item 8 -->
+            <div class="product-box" data-id="7">
+              <img src="images/product8.jpg" alt="t-shirt" class="product-img">
+              <h2 class="product-title">ULTRABOOST</h2>
+              <span class="price">$77</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+    </div>
+  </section>
+</body>
+</html>
