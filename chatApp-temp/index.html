@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,regular,700,700italic,900" rel="stylesheet" />
+  <script src="app.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Chat desktop app</title>
+</head>
+<body>
+  <main class="main container">
+    <section class="side-menu">
+      <div class="flex-wrapper">
+        <div class="side-menu__app-buttons">
+          <button class="button close" type="button"></button>
+          <button class="button collapse" type="button"></button>
+          <button class="button resize" type="button"></button>
+        </div>
+        <div class="side-menu__apps">
+          <div class="apps__app app1"></div>
+          <div class="apps__app app2"></div>
+          <div class="apps__app app3"></div>
+          <div class="apps__app app4"></div>
+          <div class="apps__app app5"></div>
+          <div class="apps__app app6"></div>
+          <div class="apps__app app7"></div>
+        </div>
+        <div class="side-menu__app-adding">
+          <button class="side-menu__plus-button"></button>
+        </div>
+      </div>
+    </section>
+    <section class="nomad-list">
+      <div class="nomad__title">
+        <div class="title">
+          <h2>Nomad List</h2>
+          <i class='bx bx-chevron-left' ></i>
+        </div>
+        <i class='bx bx-cog settings'></i>
+      </div>
+      <div class="nomad-list__treads">
+        <i class='bx bx-message-square-dots treads-icon'></i>
+        <div class="treads">All treads</div>
+      </div>
+      <div class="nomad-list__wrapper">
+        <div class="list-channels">
+          <div class="list-channels__title">
+            <div class="channels-title">CHANNELS</div>
+            <div class="channels-quantity">11</div>
+          </div>
+          <ul class="list-channels__channels">
+            <li class="channel">#general</li>
+            <li class="channel">#support</li>
+            <li class="channel">#marketing</li>
+            <li class="channel">#thailand</li>
+            <li class="channel">#bali</li>
+            <li class="channel">#poland</li>
+            <li class="channel">#australia</li>
+            <li class="channel">#jobs</li>
+            <li class="channel">#startups</li>
+            <li class="channel">#italy</li>
+            <li class="channel">#freelance</li>
+          </ul>
+        </div>
+        <div class="list-friends">
+          <div class="list-friends__title">
+            <div class="friends-title">FRIENDS</div>
+            <div class="friends-quantity">82</div>
+          </div>
+          <ul class="list-friends__friends">
+            <li class="friend" data-username>
+              <div class="online-indicator" data-is-online></div>
+              <img src="images/Photo1.png" alt="photo">
+              <p>Orlando Diggs</p>
+            </li>
+            <li class="friend" data-username>
+              <div class="online-indicator" data-is-online></div>
+              <img src="images/Photo2.png" alt="photo">
+              <p>Carmen Velasco</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="app-main-section">    </section>
+    <section class="side-profile-info"></section>
+  </main>
+</body>
+</html>
