@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,regular,700,700italic,900" rel="stylesheet" />
-  <script src="app.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
   <title>Chat desktop app</title>
 </head>
 <body>
@@ -52,37 +52,14 @@
             <div class="channels-title">CHANNELS</div>
             <div class="channels-quantity">11</div>
           </div>
-          <ul class="list-channels__channels">
-            <li class="channel">#general</li>
-            <li class="channel">#support</li>
-            <li class="channel">#marketing</li>
-            <li class="channel">#thailand</li>
-            <li class="channel">#bali</li>
-            <li class="channel">#poland</li>
-            <li class="channel">#australia</li>
-            <li class="channel">#jobs</li>
-            <li class="channel">#startups</li>
-            <li class="channel">#italy</li>
-            <li class="channel">#freelance</li>
-          </ul>
+          <ul class="list-channels__channels"></ul>
         </div>
         <div class="list-friends">
           <div class="list-friends__title">
             <div class="friends-title">FRIENDS</div>
             <div class="friends-quantity">82</div>
           </div>
-          <ul class="list-friends__friends">
-            <li class="friend" data-username>
-              <div class="online-indicator" data-is-online></div>
-              <img src="images/Photo1.png" alt="photo">
-              <p>Orlando Diggs</p>
-            </li>
-            <li class="friend" data-username>
-              <div class="online-indicator" data-is-online></div>
-              <img src="images/Photo2.png" alt="photo">
-              <p>Carmen Velasco</p>
-            </li>
-          </ul>
+          <ul class="list-friends__friends"></ul>
         </div>
       </div>
     </section>
@@ -109,105 +86,7 @@
           </div>
         </section>
         <section class="app-main__body section-padding">
-          <div class="app__message-box">
-            <div class="message__profile-picture">
-              <img src="images/Photo7.png" alt="photo">
-            </div>
-            <div class="message__text-area">
-              <div class="text-area__author">
-                <div class="author__name">Jeshua Stout</div>
-                <div class="author__date">6:38 PM</div>
-              </div>
-              <div class="text-area__message">
-                <div class="message__text">
-                  @pierrhack I did for 6 days in Iceland
-                </div>
-                <div class="message__media"></div>
-              </div>
-            </div>
-          </div>
-          <div class="app__message-box">
-            <div class="message__profile-picture">
-              <img src="images/Photo8.png" alt="photo">
-            </div>
-            <div class="message__text-area">
-              <div class="text-area__author">
-                <div class="author__name">Harold Adams</div>
-                <div class="author__date">5:02</div>
-              </div>
-              <div class="text-area__message">
-                <div class="message__text">
-                  Which country to visit next?
-                  This is a photo with my friends - celebrating in Bali
-                  my-top-places.jpg
-                </div>
-                <div class="message__media">
-                  <img src="images/picture-in-chat.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="app__message-box">
-            <div class="message__profile-picture">
-              <img src="images/Photo9.png" alt="photo">
-            </div>
-            <div class="message__text-area">
-              <div class="text-area__author">
-                <div class="author__name">Aada Laine</div>
-                <div class="author__date">11:54 PM</div>
-              </div>
-              <div class="text-area__message">
-                <div class="message__text">
-                  @har_adams wow it’s amazing, I want to buy a van and travelling next year
-                </div>
-                <div class="message__media"></div>
-              </div>
-            </div>
-          </div>
-          <div class="app__message-box">
-            <div class="message__profile-picture">
-              <img src="images/Photo10.png" alt="photo">
-            </div>
-            <div class="message__text-area">
-              <div class="text-area__author">
-                <div class="author__name">Nata Hester</div>
-                <div class="author__date">11:56 AM</div>
-              </div>
-              <div class="text-area__message">
-                <div class="message__text">
-                  Working from a van in Australia isn’t feasible if you need internet.
-                  It may have improved over the last years but I spent some time
-                  in a camper van around Tasmania and internet was a real problem
-                  (and Tasmania is tiny compared to the rest of the country).
-                </div>
-                <div class="message__media"></div>
-              </div>
-            </div>
-          </div>
-          <div class="app__message-box">
-            <div class="message__profile-picture">
-              <img src="images/Photo11.png" alt="photo">
-            </div>
-            <div class="message__text-area">
-              <div class="text-area__author">
-                <div class="author__name">Ramon Bateman</div>
-                <div class="author__date">11:59 AM</div>
-              </div>
-              <div class="text-area__message">
-                <div class="message__text">
-                  @aa_da What's the reason for the van?
-                  Saving money or just like to get outside?
-                  If you've got a stable source of income you
-                  could always do some short term Airbnbs +
-                  buy a truck/topper, build a platform in the
-                  back. That way you can always convert it
-                  back to a truck and sleep in an apartment
-                  if you want.
-                </div>
-                <div class="message__media"></div>
-              </div>
-            </div>
-          </div>
+
         </section>
         <section class="app-main__footer">
           <i class='bx bx-microphone micro' ></i>
@@ -218,7 +97,30 @@
 
     </section>
     <section class="side-profile-info">
-      
+        <div class="profile__picture">
+          <img src="images/prof-ava.png" alt="photo">
+        </div>
+        <div class="profile__info">
+          <div class="profile-info__main">
+            <div class="profile-info__socials">
+              <a href="#" class="facebook"><img src="images/fb-icon.png" alt="fb"></a>
+                <a href="#" class="twitter"><img src="images/twit-icon.png" alt="fb"></a>
+                <a href="#" class="instagram"><img src="images/inst-icon.png" alt="fb"></a>
+                <a href="#" class="inline"><img src="images/in-icon.png" alt="fb"></a>
+            </div>
+            <div class="profile-info__buttons">
+              <button class="send-message">Message</button>
+              <button class="settings">
+                <i class='bx bxs-down-arrow' ></i>
+              </button>
+            </div>
+          </div>
+          <div class="profile-info__secondary">
+          </div>
+        </div>
+        <div class="profile__button">
+          <button class="hide-profile open"><i class='bx bx-chevron-right' ></i></button>
+        </div>
     </section>
   </main>
 </body>

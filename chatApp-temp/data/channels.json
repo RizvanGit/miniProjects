@@ -1,0 +1,37 @@
+{
+  "channels":[
+    {
+      "channel": "general"
+    },
+    {
+      "channel": "support"
+    },
+    {
+      "channel": "marketing"
+    },
+    {
+      "channel": "thailand"
+    },
+    {
+      "channel": "bali"
+    },
+    {
+      "channel": "poland"
+    },
+    {
+      "channel": "australia"
+    },
+    {
+      "channel": "jobs"
+    },
+    {
+      "channel": "startups"
+    },
+    {
+      "channel": "italy"
+    },
+    {
+      "channel": "freelance"
+    }
+  ]
+}
