@@ -1,0 +1,126 @@
+{
+  "my account":[
+    {
+      "name": "Amilia Luna",
+      "username": "amilia_lu",
+      "age": 29,
+      "position": "UI Designer",
+      "email": "a-luna@gmail.com",
+      "skype": "amiluna",
+      "image-url": "images/prof-ava.png",
+      "country": "United States"             
+    }
+  ],
+  "members": [
+    {
+      "name": "Orlando Diggs",
+      "username": "orlando_di",
+      "age": 29,
+      "position": "Designer",
+      "email": "orlandodiggs@gmail.com",
+      "skype": "orlandodiggs",
+      "image-url": "images/Photo1.png",
+      "country": "United States"             
+    },
+    {
+      "name": "Carmen Velasco",
+      "username": "carmen_dve",
+      "age": 26,
+      "position": "Photographer",
+      "email": "carmenvelasco@gmail.com",
+      "skype": "carmenvelasco",
+      "image-url": "images/Photo2.png",
+      "country": "England"             
+    },
+    {
+      "name": "Marie Jensen",
+      "username": "marie_je",
+      "age": 31,
+      "position": "Artist",
+      "email": "mariejensen@gmail.com",
+      "skype": "mariejensen",
+      "image-url": "images/Photo3.png",
+      "country": "France"             
+    },
+    {
+      "name": "Alex Lee",
+      "username": "alex_le",
+      "age": 37,
+      "position": "Pilot",
+      "email": "alexlees@gmail.com",
+      "skype": "alexlee",
+      "image-url": "images/Photo4.png",
+      "country": "China"             
+    },
+    {
+      "name": "Leo Gill",
+      "username": "leo_gi",
+      "age": 39,
+      "position": "Singer",
+      "email": "leogill@gmail.com",
+      "skype": "leogill",
+      "image-url": "images/Photo5.png",
+      "country": "Brazil"             
+    },
+    {
+      "name": "Britney Cooper",
+      "username": "britney_co",
+      "age": 28,
+      "position": "Newsman",
+      "email": "britneycooper@gmail.com",
+      "skype": "britneycooper",
+      "image-url": "images/Photo6.png",
+      "country": "United States"             
+    },
+    {
+      "name": "Jeshua Stout",
+      "username": "jeshua_st",
+      "age": 33,
+      "position": "Engineer",
+      "email": "jeshuastouts@gmail.com",
+      "skype": "jeshuastouts",
+      "image-url": "images/Photo7.png",
+      "country": "Germany"             
+    },
+    {
+      "name": "Harold Adams",
+      "username": "harold_ad",
+      "age": 33,
+      "position": "Athlete",
+      "email": "haroldadams@gmail.com",
+      "skype": "haroldadams",
+      "image-url": "images/Photo8.png",
+      "country": "Sweden"             
+    },
+    {
+      "name": "Aada Laine",
+      "username": "aada_la",
+      "age": 27,
+      "position": "Musician",
+      "email": "aadalaina@gmail.com",
+      "skype": "aadalaina",
+      "image-url": "images/Photo9.png",
+      "country": "Italy"             
+    },
+    {
+      "name": "Nala Hester",
+      "username": "nala_he",
+      "age": 27,
+      "position": "Actress",
+      "email": "nalahester@gmail.com",
+      "skype": "nalahester",
+      "image-url": "images/Photo10.png",
+      "country": "Belgium"             
+    },
+    {
+      "name": "Ramon Bateman",
+      "username": "ramon_ba",
+      "age": 31,
+      "position": "IT Developer",
+      "email": "ramonbateman@gmail.com",
+      "skype": "ramonbateman",
+      "image-url": "images/Photo11.png",
+      "country": "Canada"             
+    }
+  ]
+}

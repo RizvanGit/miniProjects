@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,regular,700,700italic,900" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
+  <title>Chat desktop app</title>
+</head>
+<body>
+  <main class="main container">
+    <section class="side-menu">
+      <div class="flex-wrapper">
+        <div class="side-menu__app-buttons">
+          <button class="button close" type="button"></button>
+          <button class="button collapse" type="button"></button>
+          <button class="button resize" type="button"></button>
+        </div>
+        <div class="side-menu__apps">
+          <div class="apps__app app1"></div>
+          <div class="apps__app app2"></div>
+          <div class="apps__app app3"></div>
+          <div class="apps__app app4"></div>
+          <div class="apps__app app5"></div>
+          <div class="apps__app app6"></div>
+          <div class="apps__app app7"></div>
+        </div>
+        <div class="side-menu__app-adding">
+          <button class="side-menu__plus-button"></button>
+        </div>
+      </div>
+    </section>
+    <section class="nomad-list">
+      <div class="nomad__title">
+        <div class="title">
+          <h2>Nomad List</h2>
+          <i class='bx bx-chevron-left' ></i>
+        </div>
+        <i class='bx bx-cog settings'></i>
+      </div>
+      <div class="nomad-list__treads">
+        <i class='bx bx-message-square-dots treads-icon'></i>
+        <div class="treads">All treads</div>
+      </div>
+      <div class="nomad-list__wrapper">
+        <div class="list-channels">
+          <div class="list-channels__title">
+            <div class="channels-title">CHANNELS</div>
+            <div class="channels-quantity">11</div>
+          </div>
+          <ul class="list-channels__channels"></ul>
+        </div>
+        <div class="list-friends">
+          <div class="list-friends__title">
+            <div class="friends-title">FRIENDS</div>
+            <div class="friends-quantity">82</div>
+          </div>
+          <ul class="list-friends__friends"></ul>
+        </div>
+      </div>
+    </section>
+    <section class="app-main-section">
+
+        <section class="app-main__header section-padding">
+          <div class="main-header__title">
+            <span>#general</span>
+            <i class='bx bxs-star favorite' ></i>
+          </div>
+          <div class="main-header__counter">
+            <i class='bx bx-user'></i>
+            <span>1093</span>
+          </div>
+          <div class="main-header__search">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search' ></i>
+          </div>
+          <div class="main-header__notification">
+            <i class='bx bx-bell' ></i>
+          </div>
+          <div class="main-header__properties">
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </div>
+        </section>
+        <section class="app-main__body section-padding">
+
+        </section>
+        <section class="app-main__footer">
+          <i class='bx bx-microphone micro' ></i>
+          <i class='bx bx-link add-btn'></i>
+          <i class='bx bx-smile smile' ></i>
+          <input type="text" name="text" id="text-input" placeholder="Type message...">
+        </section>
+
+    </section>
+    <section class="side-profile-info">
+        <div class="profile__picture">
+          <img src="images/prof-ava.png" alt="photo">
+        </div>
+        <div class="profile__info">
+          <div class="profile-info__main">
+            <div class="profile-info__socials">
+              <a href="#" class="facebook"><img src="images/fb-icon.png" alt="fb"></a>
+                <a href="#" class="twitter"><img src="images/twit-icon.png" alt="fb"></a>
+                <a href="#" class="instagram"><img src="images/inst-icon.png" alt="fb"></a>
+                <a href="#" class="inline"><img src="images/in-icon.png" alt="fb"></a>
+            </div>
+            <div class="profile-info__buttons">
+              <button class="send-message">Message</button>
+              <button class="settings">
+                <i class='bx bxs-down-arrow' ></i>
+              </button>
+            </div>
+          </div>
+          <div class="profile-info__secondary">
+          </div>
+        </div>
+        <div class="profile__button">
+          <button class="hide-profile open"><i class='bx bx-chevron-right' ></i></button>
+        </div>
+    </section>
+  </main>
+</body>
+</html>
